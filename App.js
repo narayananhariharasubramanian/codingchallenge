@@ -10,6 +10,20 @@ const orgData = [
   {name:'Narayanan', id:252, managerId:190}
 ];
 
+/*
+Data will be organized as in the below format
+[{
+managerId:150,
+reportees:[100,400]},
+{
+managerId:100,
+reportees:[220,275]
+}
+etc.
+]
+
+While displaying the tree is started with the node with no manager and the function is recursively called to do a depth first search and print the data like a tree. 
+*/
 const displayData = [];
 
 function App() {
